@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/Telecom-Customer-Mgt/static/css/main.553ad286.css",
-    "main.js": "/Telecom-Customer-Mgt/static/js/main.cb637cd3.js",
+    "main.js": "/Telecom-Customer-Mgt/static/js/main.9ffe6828.js",
     "static/js/453.8edcd2bc.chunk.js": "/Telecom-Customer-Mgt/static/js/453.8edcd2bc.chunk.js",
     "index.html": "/Telecom-Customer-Mgt/index.html",
     "main.553ad286.css.map": "/Telecom-Customer-Mgt/static/css/main.553ad286.css.map",
-    "main.cb637cd3.js.map": "/Telecom-Customer-Mgt/static/js/main.cb637cd3.js.map",
+    "main.9ffe6828.js.map": "/Telecom-Customer-Mgt/static/js/main.9ffe6828.js.map",
     "453.8edcd2bc.chunk.js.map": "/Telecom-Customer-Mgt/static/js/453.8edcd2bc.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.553ad286.css",
-    "static/js/main.cb637cd3.js"
+    "static/js/main.9ffe6828.js"
   ]
 }
