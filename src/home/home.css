@@ -1,0 +1,6 @@
+.home-template {
+  display: flex;
+  justify-content:center;
+  gap:3vw;
+  padding-top: 3vw;
+}

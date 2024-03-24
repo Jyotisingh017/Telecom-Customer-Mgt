@@ -1,14 +1,23 @@
-import React from 'react';
-import ReactDOM from 'react-dom/client';
-import './index.css';
-import App from './App';
-import reportWebVitals from './reportWebVitals';
+import React from "react";
+import ReactDOM from "react-dom";
 
-const root = ReactDOM.createRoot(document.getElementById('root'));
-root.render(
+import { BrowserRouter } from "react-router-dom";
+import "./index.css";
+import App from "./App";
+import { UserDetailContext } from "./contexts/UserDetailContext";
+import reportWebVitals from "./reportWebVitals";
+
+//add error boundary later
+//const root = ReactDOM.createRoot(document.getElementById("root"));
+ReactDOM.render(
   <React.StrictMode>
-    <App />
-  </React.StrictMode>
+    <BrowserRouter>
+    <UserDetailContext.Provider value={{name:'Mac', plan: 'Platinum365', renewDte:'24/04/2024', status:'Active'}}>
+      <App />
+      </UserDetailContext.Provider>
+    </BrowserRouter>
+  </React.StrictMode>,
+  document.getElementById("root")
 );
 
 // If you want to start measuring performance in your app, pass a function
