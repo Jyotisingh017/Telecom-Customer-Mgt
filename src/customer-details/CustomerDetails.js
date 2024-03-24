@@ -19,7 +19,7 @@ function CustomerDetails() {
   const [rows, setRows] = useState([]);
   const getCustDetails = async () => {
     await axios
-      .get("customer-details.json")
+      .get("/Telecom-Customer-Mgt/customer-details.json")
       .then((res) => res.data && setRows([...res.data]))
       .catch((err) => console.log(err));
   };
