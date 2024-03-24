@@ -18,3 +18,16 @@ Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 #### `npm run test`
 
 Launches the test suite, where you can see the test results.
+
+# Application screenshots -
+## Home screen
+![Home Screen](https://github.com/Jyotisingh017/Telecom-Customer-Mgt/blob/main/images/HomeScreen.png)
+
+## Registration screen
+![Registration screen](https://github.com/Jyotisingh017/Telecom-Customer-Mgt/blob/main/images/Registration.png)
+
+## Renew Plan
+![Renew Plan](https://github.com/Jyotisingh017/Telecom-Customer-Mgt/blob/main/images/RenewPlan.png)
+
+## Customer Details
+![Customer Details](https://github.com/Jyotisingh017/Telecom-Customer-Mgt/blob/main/images/CustomerDetails.png)
