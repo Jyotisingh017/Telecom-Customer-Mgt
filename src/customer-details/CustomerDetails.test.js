@@ -1,20 +1,9 @@
 import React from "react";
 import axios from "axios";
-// import mockedAxios from "axios";
 import { render, screen, waitFor } from "@testing-library/react";
 import CustomerDetails from "./CustomerDetails";
 
-
-
-//afterEach(cleanup);
 jest.mock("axios");
-const getCustDetails = jest.fn();
-
-// test("renders Customer detail", () => {
-//   render(<CustomerDetails />);
-//   const element = screen.getByRole("button");
-//   expect(element).toBeInTheDocument();
-// });
 
 test("fetched customer data and displays in table", async() => {
     
@@ -36,8 +25,6 @@ test("fetched customer data and displays in table", async() => {
             "status": "Inactive"
         }]
 
-        
-    // mockedAxios.get.mockResolvedValue(userD);
     await axios.get.mockImplementationOnce(() =>
       Promise.resolve({ data: userD })
     );
