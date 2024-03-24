@@ -1,0 +1,9 @@
+.formcontrol{
+    display: flex;
+    flex-direction: column;
+    gap:0.5vw;
+}
+
+.formcontrol label{
+    font-size: 11px;
+}

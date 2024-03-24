@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from "react";
+import axios from "axios";
 import {
   Table,
   TableBody,
@@ -7,19 +8,20 @@ import {
   TableHead,
   TableRow,
   Paper,
-  Button
+  Button,
 } from "@mui/material";
 import { IconArrowLeft } from "@tabler/icons-react";
-//import axios from "axios";
 import { useHistory } from "react-router-dom";
 import { PLAN_DETAILS } from "../constants";
-import { customer_json } from "../mock/customer-details";
+
 function CustomerDetails() {
-    const history = useHistory();
+  const history = useHistory();
   const [rows, setRows] = useState([]);
   const getCustDetails = async () => {
-    // await axios.get('url').then(res => console.log(res));
-    setRows([...customer_json]);
+    await axios
+      .get("customer-details.json")
+      .then((res) => res.data && setRows([...res.data]))
+      .catch((err) => console.log(err));
   };
 
   useEffect(() => {
@@ -27,17 +29,17 @@ function CustomerDetails() {
   }, []);
   return (
     <div>
-          <Button
+      <Button
         variant="contained"
         color="success"
         size="s"
-        startIcon={<IconArrowLeft size="15"/>}
+        startIcon={<IconArrowLeft size="15" />}
         sx={{ position: "absolute", top: 0, left: 0, margin: "2vw" }}
-        onClick={()=>history.push(PLAN_DETAILS)}
+        onClick={() => history.push(PLAN_DETAILS)}
       >
         Go to plan details
       </Button>
-      <TableContainer component={Paper}>
+      <TableContainer component={Paper} className="page-wrapper">
         <Table sx={{ minWidth: 650 }} aria-label="caption table">
           <TableHead>
             <TableRow>
@@ -50,7 +52,7 @@ function CustomerDetails() {
           </TableHead>
           <TableBody>
             {rows.map((row) => (
-              <TableRow key={row.name}>
+              <TableRow key={row.name} role="row_cust">
                 <TableCell component="th" scope="row">
                   {row.name}
                 </TableCell>

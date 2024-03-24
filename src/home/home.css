@@ -1,6 +1,12 @@
 .home-template {
+  position: absolute;
+  top:10vw;
   display: flex;
   justify-content:center;
   gap:3vw;
   padding-top: 3vw;
+}
+
+.alert{
+  color:red;
 }

@@ -28,6 +28,7 @@ function Plans({selectedPlan,handleSelectedPlan}) {
       {planOptions.map((plan) => (
         <Card
          key={plan.name}
+         role="plan"
           sx={{
             display: "flex",
             flexDirection: "column",

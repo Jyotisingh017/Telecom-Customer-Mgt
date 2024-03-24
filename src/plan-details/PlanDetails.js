@@ -16,11 +16,10 @@ function PlanDetails() {
   };
 
   useEffect(() => {
-    console.log(userDetails);
    userDetails?.plan && setPlan(userDetails.plan);
   },[]);
   return (
-    <div>
+    <div className="page-wrapper">
       <Box
         sx={{
           display: "flex",
@@ -60,6 +59,7 @@ function PlanDetails() {
         <Plans selectedPlan={plan} handleSelectedPlan={(planOpt) => setPlan(planOpt?.name?.toLowerCase())} />
         {(plan && userDetails?.plan?.toLowerCase() !== plan?.toLowerCase())&& (
           <Button
+            role="renewBtn"
             variant="contained"
             startIcon={<IconArrowUp size="15" />}
             sx={{ float: "right", margin: "2vw" }}
