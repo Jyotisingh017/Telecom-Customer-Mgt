@@ -4,7 +4,7 @@
 
 
 ## Checkout the project from the repository URL provided to you in email.
-Note: Checkout code from branch named - `main`.
+Note: Checkout code from branch named - `main` into local created folder with given project name.
 
 ### Navigate in the terminal to the project root directory (where `package.json` is available) and run below command(s) in the order they are mentioned -
 #### 1. `npm install`
